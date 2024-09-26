@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_landing_dropdowns",
+  "info": {
+    "displayName": "Program list section",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.text-list",
+      "required": true
+    }
+  }
+}

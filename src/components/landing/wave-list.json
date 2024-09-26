@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_landing_wave_lists",
+  "info": {
+    "displayName": "Wave list",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "period": {
+      "type": "string",
+      "required": true
+    },
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

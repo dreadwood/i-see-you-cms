@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_landing_footer_sections",
+  "info": {
+    "displayName": "Footer section",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "copyrightDate": {
+      "type": "string",
+      "required": true
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.link"
+    },
+    "contactLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.link"
+    },
+    "textLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.link"
+    }
+  }
+}

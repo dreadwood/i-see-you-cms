@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_landing_fields",
+  "info": {
+    "displayName": "field",
+    "icon": "feather",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "placeholder": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "email",
+        "tel"
+      ],
+      "required": true
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": false
+    },
+    "isExist": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

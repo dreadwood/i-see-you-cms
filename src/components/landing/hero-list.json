@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_test_category_hero_lists",
+  "info": {
+    "displayName": "border list",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "speedometer",
+        "clock",
+        "globe",
+        "users"
+      ],
+      "required": true
+    },
+    "colorText": {
+      "type": "string"
+    }
+  }
+}

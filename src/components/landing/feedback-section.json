@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_landing_feedback_sections",
+  "info": {
+    "displayName": "Feedback section",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "people": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.people-list",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_landing_about_course_sections",
+  "info": {
+    "displayName": "About course Section",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.text-list",
+      "required": true
+    }
+  }
+}

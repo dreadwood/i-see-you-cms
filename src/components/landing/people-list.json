@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_landing_people_lists",
+  "info": {
+    "displayName": "People list",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

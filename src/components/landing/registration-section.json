@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_landing_registration_sections",
+  "info": {
+    "displayName": "Registration Section",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cost": {
+      "type": "string",
+      "required": true
+    },
+    "costText": {
+      "type": "text",
+      "required": true
+    },
+    "formTitle": {
+      "type": "string",
+      "required": true
+    },
+    "formText": {
+      "type": "text"
+    },
+    "nameField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.field"
+    },
+    "emailField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.field"
+    },
+    "telField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.field"
+    },
+    "telegramField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.field"
+    },
+    "formTextButton": {
+      "type": "string",
+      "required": true
+    },
+    "formSuccessfulMsg": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

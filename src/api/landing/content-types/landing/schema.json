@@ -1,0 +1,73 @@
+{
+  "kind": "singleType",
+  "collectionName": "landings",
+  "info": {
+    "singularName": "landing",
+    "pluralName": "landings",
+    "displayName": "Landing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.hero",
+      "required": true
+    },
+    "courseDescriptionSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.course-description-section"
+    },
+    "whyNeedSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.why-need-section"
+    },
+    "aboutAuthorSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.about-author-section"
+    },
+    "curatorsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.curators-section"
+    },
+    "programSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.program-section"
+    },
+    "programListSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.dropdown"
+    },
+    "feedbackSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.feedback-section"
+    },
+    "aboutCourseSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.about-course-section"
+    },
+    "registrationSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.registration-section"
+    },
+    "footerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.footer-section",
+      "required": true
+    }
+  }
+}

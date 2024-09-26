@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_landing_course_description_sections",
+  "info": {
+    "displayName": "Course description section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "highlightedText": {
+      "type": "text",
+      "required": false
+    },
+    "posterVideo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

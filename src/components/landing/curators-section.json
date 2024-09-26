@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_landing_curators_sections",
+  "info": {
+    "displayName": "Curators section",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "people": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.people-list",
+      "required": true
+    }
+  }
+}
