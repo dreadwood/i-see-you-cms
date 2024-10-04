@@ -12,7 +12,16 @@ export default [
 
   'strapi::poweredBy',
   'strapi::query',
-  'strapi::body',
+
+  {
+    name: 'strapi::body',
+    config: {
+      formidable: {
+        maxFileSize: 1073741824,
+      },
+    }
+  },
+
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
