@@ -788,6 +788,42 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiBlogBlog extends Schema.CollectionType {
+  collectionName: 'blogs';
+  info: {
+    singularName: 'blog';
+    pluralName: 'blogs';
+    displayName: 'blog';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    articleTitle: Attribute.String & Attribute.Required;
+    previewText: Attribute.Text & Attribute.Required;
+    previewImage: Attribute.Media<'images'> & Attribute.Required;
+    firstText: Attribute.Text & Attribute.Required;
+    articleImages: Attribute.Media<'images', true>;
+    secondText: Attribute.Text;
+    author: Attribute.String;
+    date: Attribute.String & Attribute.Required;
+    socialCount: Attribute.String;
+    previewTitle: Attribute.String & Attribute.Required;
+    isMainPage: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+    url: Attribute.String & Attribute.Required & Attribute.Unique;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiClientClient extends Schema.CollectionType {
   collectionName: 'clients';
   info: {
@@ -881,6 +917,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::blog.blog': ApiBlogBlog;
       'api::client.client': ApiClientClient;
       'api::landing.landing': ApiLandingLanding;
     }
