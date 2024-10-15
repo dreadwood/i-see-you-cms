@@ -50,10 +50,6 @@
       "type": "string",
       "required": true
     },
-    "socialCount": {
-      "type": "string",
-      "required": false
-    },
     "previewTitle": {
       "type": "string",
       "required": true
@@ -67,6 +63,36 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "articlePosterVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "articleVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "thirdText": {
+      "type": "text"
+    },
+    "articleVideoWidth": {
+      "default": 66,
+      "max": 100,
+      "required": false,
+      "min": 10,
+      "type": "integer"
+    },
+    "socialCount": {
+      "type": "integer",
+      "min": 0
     }
   }
 }

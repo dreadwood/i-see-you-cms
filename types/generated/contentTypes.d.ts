@@ -808,12 +808,30 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     secondText: Attribute.Text;
     author: Attribute.String;
     date: Attribute.String & Attribute.Required;
-    socialCount: Attribute.String;
     previewTitle: Attribute.String & Attribute.Required;
     isMainPage: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
     url: Attribute.String & Attribute.Required & Attribute.Unique;
+    articlePosterVideo: Attribute.Media<'images'>;
+    articleVideo: Attribute.Media<'videos'>;
+    thirdText: Attribute.Text;
+    articleVideoWidth: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          min: 10;
+          max: 100;
+        },
+        number
+      > &
+      Attribute.DefaultTo<66>;
+    socialCount: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
