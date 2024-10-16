@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_landing_text_with_descriptions",
+  "info": {
+    "displayName": "Text with description",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

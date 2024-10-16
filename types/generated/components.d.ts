@@ -28,13 +28,26 @@ export interface LandingWaveList extends Schema.Component {
   };
 }
 
+export interface LandingTextWithDescription extends Schema.Component {
+  collectionName: 'components_landing_text_with_descriptions';
+  info: {
+    displayName: 'Text with description';
+    icon: 'bulletList';
+  };
+  attributes: {
+    item: Attribute.String & Attribute.Required;
+    description: Attribute.Text;
+  };
+}
+
 export interface LandingTextList extends Schema.Component {
   collectionName: 'components_landing_text_lists';
   info: {
     displayName: 'Text list';
+    description: '';
   };
   attributes: {
-    item: Attribute.String;
+    item: Attribute.String & Attribute.Required;
   };
 }
 
@@ -186,7 +199,7 @@ export interface LandingDropdown extends Schema.Component {
   };
   attributes: {
     name: Attribute.String & Attribute.Required;
-    list: Attribute.Component<'landing.text-list', true> & Attribute.Required;
+    list: Attribute.Component<'landing.text-with-description', true>;
   };
 }
 
@@ -254,6 +267,7 @@ declare module '@strapi/types' {
     export interface Components {
       'landing.why-need-section': LandingWhyNeedSection;
       'landing.wave-list': LandingWaveList;
+      'landing.text-with-description': LandingTextWithDescription;
       'landing.text-list': LandingTextList;
       'landing.registration-section': LandingRegistrationSection;
       'landing.program-section': LandingProgramSection;

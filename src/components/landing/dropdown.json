@@ -14,8 +14,7 @@
     "list": {
       "type": "component",
       "repeatable": true,
-      "component": "landing.text-list",
-      "required": true
+      "component": "landing.text-with-description"
     }
   }
 }

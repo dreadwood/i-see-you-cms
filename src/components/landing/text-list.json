@@ -1,12 +1,14 @@
 {
   "collectionName": "components_landing_text_lists",
   "info": {
-    "displayName": "Text list"
+    "displayName": "Text list",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "item": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
